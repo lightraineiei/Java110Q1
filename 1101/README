@@ -1,1 +1,45 @@
-1101
+//1101
+class Cal_area
+{
+	int radius;
+	int width;
+	int height;
+	int length;
+	double pi =3.14159;
+void setR(int r)
+{
+	radius=r;
+}
+void setW(int w)
+{
+	width=w;
+}
+void setH(int h)
+{
+	height=h;
+}
+void setL(int l)
+{
+	length=l;
+}
+void show()
+{
+	System.out.println("Surface area:"+(length*width*2+(length*height*2)+((width*height)*2)));
+	System.out.println("sphere:"+radius*radius*radius*pi*4/3);
+}
+
+}
+
+public class Class01 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Cal_area  ca =new Cal_area();
+		ca.setW(5);
+		ca.setH(6);
+		ca.setL(4);
+		ca.setR(10);
+		ca.show();
+	}
+
+}
